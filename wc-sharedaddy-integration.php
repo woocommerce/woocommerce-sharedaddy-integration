@@ -3,9 +3,9 @@
 /*
 Plugin Name: WooCommerce ShareDaddy Integration
 Description: Provides the integration between WooCommerce and ShareDaddy through Jetpack.
-Author: Coen Jacobs
-Author URI: http://coenjacobs.me
-Version: 0.1
+Author: WooThemes
+Author URI: http://www.woothemes.com
+Version: 1.0
 */
 
 // Add the integration to WooCommerce
@@ -14,7 +14,7 @@ function add_sharedaddy_integration( $integrations ) {
         include_once( 'includes/class-wc-sharedaddy-integration.php' );
         $integrations[] = 'WC_ShareDaddy';
     }
-    
+
     return $integrations;
 }
 
