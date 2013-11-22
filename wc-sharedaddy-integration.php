@@ -9,7 +9,7 @@ Version: 1.0
 */
 
 // Add the integration to WooCommerce
-function add_sharedaddy_integration( $integrations ) {
+function wc_sharedaddy_add_integration( $integrations ) {
     global $woocommerce;
 
     if ( is_object( $woocommerce ) && version_compare( $woocommerce->version, '2.1', '>=' ) ) {
@@ -22,4 +22,4 @@ function add_sharedaddy_integration( $integrations ) {
     return $integrations;
 }
 
-add_filter( 'woocommerce_integrations', 'add_sharedaddy_integration' );
+add_filter( 'woocommerce_integrations', 'wc_sharedaddy_add_integration' );
