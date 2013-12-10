@@ -12,7 +12,7 @@ Version: 1.0
 function wc_sharedaddy_add_integration( $integrations ) {
     global $woocommerce;
 
-    if ( is_object( $woocommerce ) && version_compare( $woocommerce->version, '2.1', '>=' ) ) {
+    if ( is_object( $woocommerce ) && version_compare( $woocommerce->version, '2.1-beta-1', '>=' ) ) {
         if ( class_exists('jetpack') ) {
             include_once( 'includes/class-wc-sharedaddy-integration.php' );
             $integrations[] = 'WC_ShareDaddy';
